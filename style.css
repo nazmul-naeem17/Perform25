@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+/*Header part*/
+.header{
+    text-align: center;
+    background: #005960;
+    padding: 30px;
+    color: whitesmoke;
+}
+/*Top nav*/
+.topNav{
+    background-color: darkgray;
+    overflow: hidden;
+}
+.topNav a{
+    float: left;
+    text-decoration: none;
+    display: block;
+    color: ghostwhite;
+    font-weight: bold;
+    padding: 13px 14px;
+}
+.topNav #right{
+    float: right;
+    background-color: red;
+    color: azure;
+}
+.topNav a:hover{
+    background-color: royalblue;
+    color: black;
+}
+.topNav #right:hover{
+    background-color: green;
+}
+/*Row start*/
+.leftcol{
+    float: left;
+    width: 73%;
+    background-color: #b8d9c9;
+    margin-top: 20px;
+}
+.forimg{
+    background-color: darkcyan;
+    padding: 20px;
+    width: 100%;
+}
+.card{
+    padding: 20px;
+    margin-top: 10px;
+}
+.round{
+    height: 100px;
+    width: 100px;
+    padding: 5px;
+    border: 4px dotted blue;
+    border-radius: 50%;
+    text-align: center;
+    background-color: lightcyan;
+    color: black;
+}
+.rightcol{
+    float: left;
+    width: 25%;
+     margin: 20px 0px 20px 20px;
+    background-color: rgb(179, 240, 219);
+}
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.footer{
+    padding: 23px;
+    text-align: center;
+    background-color: #118376;
+    float: left;
+    width: 100%;
+}
+/*Responsive Layout when device screen size is 800px wide, will converted into two coloumn*/
+@media screen and (max-width: 850px){
+    .leftcol, .rightcol{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+}
+/*for 400px*/
+@media screen and (max-width:400) {
+    .topNav a {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+}
